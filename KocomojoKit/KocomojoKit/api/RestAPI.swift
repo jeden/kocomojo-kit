@@ -10,10 +10,16 @@ import Foundation
 
 class RestAPI {
     private lazy var _queue: NSOperationQueue = NSOperationQueue()
+    
+    func getCountries(completion: ApiResult<CountriesResponse> -> ()) {
+        let (verb, url) = ApiUrl.absoluteUrl(ApiUrl.Countries)
+        invokeUrl(verb: verb, url: url, callback: completion)
+    }
+    
 }
 
 private extension RestAPI {    
-    func invokeUrl<T where T: JsonDecodable, T: ApiResponseData>(verb: HttpVerb, url: String, headers:[String:String] = [:], jsonDict: JsonDictionary?, callback: ApiResult<T> -> ()) {
+    func invokeUrl<T where T: JsonDecodable, T: ApiResponseData>(# verb: HttpVerb, url: String, headers:[String:String] = [:], jsonDict: JsonDictionary? = nil, callback: ApiResult<T> -> ()) {
         var response: NSURLResponse
         var error: NSError?
         var requestHeaders = headers

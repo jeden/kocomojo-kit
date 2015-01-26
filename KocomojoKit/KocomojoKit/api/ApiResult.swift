@@ -8,16 +8,16 @@
 
 import Foundation
 
-public enum ApiResult<T: JsonDecodable> {
+enum ApiResult<T where T: JsonDecodable, T: ApiResponseData> {
     case Value(@autoclosure () -> T)
     case HttpError(Int)
     case InvocationError(NSError)
     
-    public var succeeded: Bool {
+    var succeeded: Bool {
         return !hasError
     }
     
-    public var hasError: Bool {
+    var hasError: Bool {
         switch(self) {
         case .HttpError: return true
         case .Value: return false

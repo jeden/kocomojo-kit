@@ -18,8 +18,6 @@ final class ApiResponse<T where T: ApiResponseData, T: JsonDecodable> : JsonDeco
     private(set) var responseType: String
     private(set) var data: T?
     
-    class var dataEntityName: String { return "data" }
-    
     init(responseType: String, data: T?) {
         self.responseType = responseType
         self.data = data

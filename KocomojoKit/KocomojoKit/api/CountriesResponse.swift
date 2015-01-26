@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CountriesResponse : JsonDecodable {
+struct CountriesResponse : JsonDecodable, ApiResponseData {
     private(set) var countries: [Country]
     
     static var dataEntityName: String { return "countries" }
