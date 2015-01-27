@@ -9,12 +9,12 @@
 import Foundation
 
 public struct Plan {
-    var recommended: Bool
-    var nickName: String
-    var name: String
-    var description: String
-    var monthlyFee: Double
-    var features: [String]
+    public var recommended: Bool
+    public var nickName: String
+    public var name: String
+    public var description: String
+    public var monthlyFee: Double
+    public var features: [String]
     
     init(recommended: Bool, nickName: String, name: String, description: String, monthlyFee: Double, features: [String]) {
         self.recommended = recommended

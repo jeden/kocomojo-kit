@@ -22,9 +22,12 @@
                                     <constraint firstAttribute="height" constant="60" id="ehL-P8-AEZ"/>
                                     <constraint firstAttribute="width" constant="120" id="kna-a1-sMl"/>
                                 </constraints>
-                                <state key="normal" title="&gt;&gt; Countries">
+                                <state key="normal" title="&gt;&gt; Plans">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="aRc-3u-h2Z" kind="show" id="vOa-Iu-18l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA5-HH-69b">
                                 <rect key="frame" x="240" y="174" width="120" height="60"/>
@@ -77,6 +80,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCz-cn-YCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1978" y="812"/>
+        </scene>
+        <!--Plans Controller-->
+        <scene sceneID="0gl-DY-8ES">
+            <objects>
+                <tableViewController id="aRc-3u-h2Z" customClass="PlansController" customModule="KocomojoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xqY-zE-ip8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="aRc-3u-h2Z" id="MDB-EH-bKG"/>
+                            <outlet property="delegate" destination="aRc-3u-h2Z" id="ns2-7R-VGu"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="OEn-pc-mLZ" kind="show" identifier="show-features" id="dXq-E4-fmx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M97-Nt-8Tk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="1516"/>
+        </scene>
+        <!--Plan Features Controller-->
+        <scene sceneID="ua7-Ee-lfl">
+            <objects>
+                <tableViewController id="OEn-pc-mLZ" customClass="PlanFeaturesController" customModule="KocomojoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xqz-e3-QUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CaS-U3-HKb">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CaS-U3-HKb" id="yDm-Vz-Gzh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OEn-pc-mLZ" id="KzP-x6-Lyb"/>
+                            <outlet property="delegate" destination="OEn-pc-mLZ" id="Tze-6F-8cg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQF-Qj-lxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2907" y="1516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kTP-95-jD9">

@@ -19,12 +19,18 @@ class CountriesController: UITableViewController {
 /// MARK: - Lifecycle
 extension CountriesController {
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "generic.countries.label".localized
         loadEntities()
     }
 }
 
 /// MARK: - UITableViewDelegate
 extension CountriesController : UITableViewDelegate {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
 }
 
 /// MARK: - UITableViewDataSource
@@ -40,7 +46,7 @@ extension CountriesController : UITableViewDataSource {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "country-cell"
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? UITableViewCell ?? UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+        let cell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? UITableViewCell ?? UITableViewCell(style: .Value1, reuseIdentifier: cellIdentifier)
         let country = self.entities[indexPath.row]
         cell.textLabel?.text = country.name
         cell.detailTextLabel?.text = country.isoCode
