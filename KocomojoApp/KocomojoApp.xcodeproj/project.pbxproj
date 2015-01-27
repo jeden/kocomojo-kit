@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57672AE61A7710C500B87572 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57672AE51A7710C500B87572 /* Styles.swift */; };
+		57672AE81A77115900B87572 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57672AE71A77115900B87572 /* Localizable.strings */; };
+		57672AEA1A7711AD00B87572 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57672AE91A7711AD00B87572 /* String+Localization.swift */; };
 		577B47CA1A759518005AE8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47C91A759518005AE8A4 /* AppDelegate.swift */; };
 		577B47CC1A759518005AE8A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47CB1A759518005AE8A4 /* ViewController.swift */; };
 		577B47CF1A759518005AE8A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577B47CD1A759518005AE8A4 /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		577B47D41A759518005AE8A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577B47D21A759518005AE8A4 /* LaunchScreen.xib */; };
 		577B47E01A759518005AE8A4 /* KocomojoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47DF1A759518005AE8A4 /* KocomojoAppTests.swift */; };
 		577B47F41A75B2BC005AE8A4 /* KocomojoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577B47F31A75B2BC005AE8A4 /* KocomojoKit.framework */; };
+		57DFF4171A77836A00FB3A12 /* CountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DFF4161A77836A00FB3A12 /* CountriesController.swift */; };
+		57DFF41B1A77946300FB3A12 /* UIViewController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DFF41A1A77946300FB3A12 /* UIViewController+Progress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57672AE51A7710C500B87572 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		57672AE71A77115900B87572 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		57672AE91A7711AD00B87572 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		577B47C41A759518005AE8A4 /* KocomojoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KocomojoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577B47C81A759518005AE8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577B47C91A759518005AE8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,8 @@
 		577B47DE1A759518005AE8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577B47DF1A759518005AE8A4 /* KocomojoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KocomojoAppTests.swift; sourceTree = "<group>"; };
 		577B47F31A75B2BC005AE8A4 /* KocomojoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KocomojoKit.framework; path = "../KocomojoKit/build/Debug-iphoneos/KocomojoKit.framework"; sourceTree = "<group>"; };
+		57DFF4161A77836A00FB3A12 /* CountriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesController.swift; sourceTree = "<group>"; };
+		57DFF41A1A77946300FB3A12 /* UIViewController+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Progress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,8 @@
 				577B47D01A759518005AE8A4 /* Images.xcassets */,
 				577B47D21A759518005AE8A4 /* LaunchScreen.xib */,
 				577B47C71A759518005AE8A4 /* Supporting Files */,
+				60528EA41061EAAF61FD020A /* ui */,
+				6052821C03FB13F939F5A8F3 /* extensions */,
 			);
 			path = KocomojoApp;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				577B47C81A759518005AE8A4 /* Info.plist */,
+				57672AE71A77115900B87572 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +127,32 @@
 				577B47DE1A759518005AE8A4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6052821C03FB13F939F5A8F3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57672AE91A7711AD00B87572 /* String+Localization.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		605284C8F5E35A61D754C577 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				57672AE51A7710C500B87572 /* Styles.swift */,
+				57DFF41A1A77946300FB3A12 /* UIViewController+Progress.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		60528EA41061EAAF61FD020A /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				605284C8F5E35A61D754C577 /* tools */,
+				57DFF4161A77836A00FB3A12 /* CountriesController.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577B47CF1A759518005AE8A4 /* Main.storyboard in Resources */,
+				57672AE81A77115900B87572 /* Localizable.strings in Resources */,
 				577B47D41A759518005AE8A4 /* LaunchScreen.xib in Resources */,
 				577B47D11A759518005AE8A4 /* Images.xcassets in Resources */,
 			);
@@ -216,8 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57672AE61A7710C500B87572 /* Styles.swift in Sources */,
+				57DFF4171A77836A00FB3A12 /* CountriesController.swift in Sources */,
 				577B47CC1A759518005AE8A4 /* ViewController.swift in Sources */,
+				57DFF41B1A77946300FB3A12 /* UIViewController+Progress.swift in Sources */,
 				577B47CA1A759518005AE8A4 /* AppDelegate.swift in Sources */,
+				57672AEA1A7711AD00B87572 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

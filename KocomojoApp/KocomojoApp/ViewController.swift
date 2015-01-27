@@ -7,31 +7,24 @@
 //
 
 import UIKit
-import KocomojoKit
 
 class ViewController: UIViewController {
-    private lazy var servicesManager = ServicesManager.instance
-    private var countries: [Country]!
     
+    @IBOutlet weak var btnCountries: UIButton!
+    @IBOutlet weak var btnPlans: UIButton!
+    
+}
+
+/// MARK: - Lifecycle
+extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        Styles.defaultButton(self.btnCountries)
+        self.btnCountries.setTitle("generic.countries.label".localized, forState: .Normal)
         
-        self.servicesManager.getCountries { result in
-            switch(result) {
-            case .Error(let error):
-                println(error.localizedDescription)
-            case .Value(let countries):
-                self.countries = countries()
-                println(self.countries)
-            }
-        }
+        Styles.defaultButton(self.btnPlans)
+        self.btnPlans.setTitle("generic.plans.label".localized, forState: .Normal)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

@@ -11,4 +11,9 @@ import Foundation
 public struct Plan {
     var name: String
     var features: [String]
+    
+    init(name: String, features: [String]) {
+        self.name = name
+        self.features = features
+    }
 }

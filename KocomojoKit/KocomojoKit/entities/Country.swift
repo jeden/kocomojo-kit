@@ -9,8 +9,8 @@
 import Foundation
 
 public struct Country {
-    var name: String
-    var isoCode: String
+    public var name: String
+    public var isoCode: String
     
     init(name: String, isoCode: String) {
         self.name = name
