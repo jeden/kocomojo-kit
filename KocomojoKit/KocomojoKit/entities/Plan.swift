@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Plan {
+public struct Plan {
     var name: String
     var features: [String]
 }

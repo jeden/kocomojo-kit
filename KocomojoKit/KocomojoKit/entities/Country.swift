@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Country : JsonDecodable {
+public struct Country {
     var name: String
     var isoCode: String
     
@@ -16,14 +16,20 @@ struct Country : JsonDecodable {
         self.name = name
         self.isoCode = isoCode
     }
-    
+}
+
+extension Country : JsonDecodable {
     static func create(name: String)(isoCode: String) -> Country {
         return Country(name: name, isoCode: isoCode)
     }
     
-    static func decode(json: JsonType) -> Country? {
+    public static func decode(json: JsonType) -> Country? {
         let a = Country.create <^> json["name"] >>> JsonString
         let b = a <&&> json["iso_code"] >>> JsonString
         return b
     }
+}
+
+extension Country : Printable {
+    public var description: String { return "name: \(name) - isoCode: \(isoCode)" }
 }

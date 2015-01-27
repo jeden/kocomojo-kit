@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import KocomojoKit
 
 class ViewController: UIViewController {
-
+    private lazy var servicesManager = ServicesManager.instance
+    private var countries: [Country]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.servicesManager.getCountries { result in
+            switch(result) {
+            case .Error(let error):
+                println(error.localizedDescription)
+            case .Value(let countries):
+                self.countries = countries()
+                println(self.countries)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

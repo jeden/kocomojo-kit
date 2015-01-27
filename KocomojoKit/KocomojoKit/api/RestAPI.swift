@@ -9,13 +9,24 @@
 import Foundation
 
 class RestAPI {
+    // Singleton
+    private struct Static {
+        static var instance: RestAPI = RestAPI()
+    }
+    
+    class var instance: RestAPI { return Static.instance }
+
     private lazy var _queue: NSOperationQueue = NSOperationQueue()
     
+    private init() {}
+}
+
+/// MARK: - Interface
+extension RestAPI {
     func getCountries(completion: ApiResult<CountriesResponse> -> ()) {
         let (verb, url) = ApiUrl.absoluteUrl(ApiUrl.Countries)
         invokeUrl(verb: verb, url: url, callback: completion)
     }
-    
 }
 
 private extension RestAPI {    
