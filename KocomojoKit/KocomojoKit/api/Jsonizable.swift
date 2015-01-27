@@ -25,9 +25,11 @@ public typealias JsonArray = Array<JsonType>
 
 public func JsonString(object: JsonType?) -> String? { return object as? String }
 public func JsonInt(object: JsonType?) -> Int? { return object as? Int }
+public func JsonDouble(object: JsonType?) -> Double? { return object as? Double }
 public func JsonBool(object: JsonType?) -> Bool? { return object as? Bool }
 public func JsonDate(object: JsonType?) -> NSDate? { return NSDate.dateFromIso8610(JsonString(object)) }
 public func JsonObject(object: JsonType?) -> JsonDictionary? { return object as? JsonDictionary }
+public func JsonArrayType(object: JsonType?) -> JsonArray? { return object as? JsonArray }
 public func JsonEntity<T: JsonDecodable>(object: JsonType?) -> T? {
     if let object: JsonType = object {
         return T.decode(object)

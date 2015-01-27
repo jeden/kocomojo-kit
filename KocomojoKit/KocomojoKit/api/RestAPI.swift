@@ -27,6 +27,11 @@ extension RestAPI {
         let (verb, url) = ApiUrl.absoluteUrl(ApiUrl.Countries)
         invokeUrl(verb: verb, url: url, callback: completion)
     }
+
+    func getPlans(completion: ApiResult<PlansResponse> -> ()) {
+        let (verb, url) = ApiUrl.absoluteUrl(ApiUrl.Plans)
+        invokeUrl(verb: verb, url: url, callback: completion)
+    }
 }
 
 private extension RestAPI {    

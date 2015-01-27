@@ -9,11 +9,35 @@
 import Foundation
 
 public struct Plan {
+    var recommended: Bool
+    var nickName: String
     var name: String
+    var description: String
+    var monthlyFee: Double
     var features: [String]
     
-    init(name: String, features: [String]) {
+    init(recommended: Bool, nickName: String, name: String, description: String, monthlyFee: Double, features: [String]) {
+        self.recommended = recommended
+        self.nickName = nickName
         self.name = name
+        self.description = description
+        self.monthlyFee = monthlyFee
         self.features = features
+    }
+}
+
+extension Plan : JsonDecodable {
+    static func create(recommended: Bool)(nickName: String)(name: String)(description: String)(monthlyFee: Double)(features: [JsonType]) -> Plan {
+        return Plan(recommended: recommended, nickName: nickName, name: name, description: description, monthlyFee: monthlyFee, features: features as [String])
+    }
+
+    public static func decode(json: JsonType) -> Plan? {
+        let a = Plan.create <^> json["recommended"] >>> JsonBool
+        let b = a <&&> json["nick_name"] >>> JsonString
+        let c = b <&&> json["name"] >>> JsonString
+        let d = c <&&> json["description"] >>> JsonString
+        let e = d <&&> json["monthly_fee"] >>> JsonDouble
+        let f = e <&&> json["features"] >>> JsonArrayType
+        return f
     }
 }

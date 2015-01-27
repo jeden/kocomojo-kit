@@ -41,4 +41,24 @@ extension ServicesManager {
             completion(result)
         }
     }
-}
+
+    public func getPlans(completion: Result<[Plan]> -> ()) {
+        self.api.getPlans { apiResult in
+            var result: Result<[Plan]>
+
+            switch apiResult {
+            case .HttpError(let status):
+                let error = NSError(domain: "kocomojo.kit", code: -4, userInfo: [NSLocalizedDescriptionKey: "Server error: \(status)"])
+                result = Result.Error(error)
+
+            case .InvocationError(let error):
+                result = Result.Error(error)
+
+            case .Value(let value):
+                let plans = value().plans
+                result = Result.Value(plans)
+            }
+
+            completion(result)
+        }
+    }}
