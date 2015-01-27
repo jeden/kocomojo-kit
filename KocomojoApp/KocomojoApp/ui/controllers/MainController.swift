@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
     
     @IBOutlet weak var btnCountries: UIButton!
     @IBOutlet weak var btnPlans: UIButton!
@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 }
 
 /// MARK: - Lifecycle
-extension ViewController {
+extension MainController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
