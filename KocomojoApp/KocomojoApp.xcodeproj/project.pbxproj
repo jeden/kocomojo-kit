@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57672AE61A7710C500B87572 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57672AE51A7710C500B87572 /* Styles.swift */; };
+		57672AE81A77115900B87572 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57672AE71A77115900B87572 /* Localizable.strings */; };
+		57672AEA1A7711AD00B87572 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57672AE91A7711AD00B87572 /* String+Localization.swift */; };
 		577B47CA1A759518005AE8A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47C91A759518005AE8A4 /* AppDelegate.swift */; };
-		577B47CC1A759518005AE8A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47CB1A759518005AE8A4 /* ViewController.swift */; };
-		577B47CF1A759518005AE8A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577B47CD1A759518005AE8A4 /* Main.storyboard */; };
 		577B47D11A759518005AE8A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577B47D01A759518005AE8A4 /* Images.xcassets */; };
 		577B47D41A759518005AE8A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 577B47D21A759518005AE8A4 /* LaunchScreen.xib */; };
 		577B47E01A759518005AE8A4 /* KocomojoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47DF1A759518005AE8A4 /* KocomojoAppTests.swift */; };
-		577B47EC1A759581005AE8A4 /* KocomojoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577B47EB1A759581005AE8A4 /* KocomojoKit.framework */; };
+		57DFF41B1A77946300FB3A12 /* UIViewController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DFF41A1A77946300FB3A12 /* UIViewController+Progress.swift */; };
+		57F3A3D01A77A65800B01360 /* PlansController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3A3CF1A77A65800B01360 /* PlansController.swift */; };
+		57F3A3D21A77ACC800B01360 /* PlanFeaturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3A3D11A77ACC800B01360 /* PlanFeaturesController.swift */; };
+		57FDCC4A1A77C3B30097F685 /* KocomojoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FDCC491A77C3B30097F685 /* KocomojoKit.framework */; };
+		605281C591FAAA7A16B52370 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6052832D1FB0B81B38E6AD8A /* Main.storyboard */; };
+		60528348D6686B2F98310B60 /* CountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605283A704B71B7E89D0601E /* CountriesController.swift */; };
+		60528F259875618C34152FAC /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60528667FD8EFC2B513B389B /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,18 +34,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57672AE51A7710C500B87572 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		57672AE71A77115900B87572 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		57672AE91A7711AD00B87572 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		577B47C41A759518005AE8A4 /* KocomojoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KocomojoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577B47C81A759518005AE8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577B47C91A759518005AE8A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		577B47CB1A759518005AE8A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		577B47CE1A759518005AE8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		577B47D01A759518005AE8A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		577B47D31A759518005AE8A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		577B47D91A759518005AE8A4 /* KocomojoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KocomojoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577B47DE1A759518005AE8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577B47DF1A759518005AE8A4 /* KocomojoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KocomojoAppTests.swift; sourceTree = "<group>"; };
-		577B47E91A759542005AE8A4 /* KocomojoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KocomojoKit.framework; path = "../KocomojoKit/build/Debug-iphoneos/KocomojoKit.framework"; sourceTree = "<group>"; };
-		577B47EB1A759581005AE8A4 /* KocomojoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KocomojoKit.framework; path = "../KocomojoKit/build/Debug-iphoneos/KocomojoKit.framework"; sourceTree = "<group>"; };
+		57DFF41A1A77946300FB3A12 /* UIViewController+Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Progress.swift"; sourceTree = "<group>"; };
+		57F3A3CF1A77A65800B01360 /* PlansController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansController.swift; sourceTree = "<group>"; };
+		57F3A3D11A77ACC800B01360 /* PlanFeaturesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanFeaturesController.swift; sourceTree = "<group>"; };
+		57FDCC491A77C3B30097F685 /* KocomojoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KocomojoKit.framework; path = "../KocomojoKit/build/Debug-iphoneos/KocomojoKit.framework"; sourceTree = "<group>"; };
+		605283A704B71B7E89D0601E /* CountriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesController.swift; sourceTree = "<group>"; };
+		60528667FD8EFC2B513B389B /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		60528DACF85FB2DC4F4B7FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KocomojoApp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577B47EC1A759581005AE8A4 /* KocomojoKit.framework in Frameworks */,
+				57FDCC4A1A77C3B30097F685 /* KocomojoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +76,7 @@
 		577B47BB1A759518005AE8A4 = {
 			isa = PBXGroup;
 			children = (
-				577B47EB1A759581005AE8A4 /* KocomojoKit.framework */,
-				577B47E91A759542005AE8A4 /* KocomojoKit.framework */,
+				57FDCC491A77C3B30097F685 /* KocomojoKit.framework */,
 				577B47C61A759518005AE8A4 /* KocomojoApp */,
 				577B47DC1A759518005AE8A4 /* KocomojoAppTests */,
 				577B47C51A759518005AE8A4 /* Products */,
@@ -84,11 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				577B47C91A759518005AE8A4 /* AppDelegate.swift */,
-				577B47CB1A759518005AE8A4 /* ViewController.swift */,
-				577B47CD1A759518005AE8A4 /* Main.storyboard */,
 				577B47D01A759518005AE8A4 /* Images.xcassets */,
 				577B47D21A759518005AE8A4 /* LaunchScreen.xib */,
 				577B47C71A759518005AE8A4 /* Supporting Files */,
+				60528EA41061EAAF61FD020A /* ui */,
+				6052821C03FB13F939F5A8F3 /* extensions */,
 			);
 			path = KocomojoApp;
 			sourceTree = "<group>";
@@ -97,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				577B47C81A759518005AE8A4 /* Info.plist */,
+				57672AE71A77115900B87572 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -116,6 +129,44 @@
 				577B47DE1A759518005AE8A4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6052821C03FB13F939F5A8F3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57672AE91A7711AD00B87572 /* String+Localization.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		605284C8F5E35A61D754C577 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				57672AE51A7710C500B87572 /* Styles.swift */,
+				57DFF41A1A77946300FB3A12 /* UIViewController+Progress.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		605288D26C07B2E84786EAF8 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60528667FD8EFC2B513B389B /* MainController.swift */,
+				605283A704B71B7E89D0601E /* CountriesController.swift */,
+				57F3A3CF1A77A65800B01360 /* PlansController.swift */,
+				57F3A3D11A77ACC800B01360 /* PlanFeaturesController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		60528EA41061EAAF61FD020A /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				6052832D1FB0B81B38E6AD8A /* Main.storyboard */,
+				605284C8F5E35A61D754C577 /* tools */,
+				605288D26C07B2E84786EAF8 /* controllers */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577B47CF1A759518005AE8A4 /* Main.storyboard in Resources */,
+				57672AE81A77115900B87572 /* Localizable.strings in Resources */,
 				577B47D41A759518005AE8A4 /* LaunchScreen.xib in Resources */,
 				577B47D11A759518005AE8A4 /* Images.xcassets in Resources */,
+				605281C591FAAA7A16B52370 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577B47CC1A759518005AE8A4 /* ViewController.swift in Sources */,
+				57672AE61A7710C500B87572 /* Styles.swift in Sources */,
+				57DFF41B1A77946300FB3A12 /* UIViewController+Progress.swift in Sources */,
 				577B47CA1A759518005AE8A4 /* AppDelegate.swift in Sources */,
+				57672AEA1A7711AD00B87572 /* String+Localization.swift in Sources */,
+				60528F259875618C34152FAC /* MainController.swift in Sources */,
+				57F3A3D21A77ACC800B01360 /* PlanFeaturesController.swift in Sources */,
+				60528348D6686B2F98310B60 /* CountriesController.swift in Sources */,
+				57F3A3D01A77A65800B01360 /* PlansController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,20 +300,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		577B47CD1A759518005AE8A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				577B47CE1A759518005AE8A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		577B47D21A759518005AE8A4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				577B47D31A759518005AE8A4 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6052832D1FB0B81B38E6AD8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60528DACF85FB2DC4F4B7FAC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -295,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -331,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -419,6 +477,7 @@
 				577B47E51A759518005AE8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		577B47E61A759518005AE8A4 /* Build configuration list for PBXNativeTarget "KocomojoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +486,7 @@
 				577B47E81A759518005AE8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

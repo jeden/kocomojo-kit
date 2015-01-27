@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57672AE11A7702BD00B87572 /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57672AE01A7702BD00B87572 /* ServicesManager.swift */; };
+		57672AE41A7703C500B87572 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57672AE31A7703C500B87572 /* Result.swift */; };
+		576F83CB1A7689AD00591AC9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F83CA1A7689AD00591AC9 /* Settings.swift */; };
+		576F83CD1A768A3A00591AC9 /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F83CC1A768A3A00591AC9 /* ApiUrl.swift */; };
+		576F83CF1A768B5500591AC9 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F83CE1A768B5500591AC9 /* RestAPI.swift */; };
 		577B47A51A7594BE005AE8A4 /* KocomojoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 577B47A41A7594BE005AE8A4 /* KocomojoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		577B47AB1A7594BE005AE8A4 /* KocomojoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577B479F1A7594BE005AE8A4 /* KocomojoKit.framework */; };
 		577B47B21A7594BE005AE8A4 /* KocomojoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47B11A7594BE005AE8A4 /* KocomojoKitTests.swift */; };
+		577B47F71A75B892005AE8A4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47F51A75B892005AE8A4 /* Country.swift */; };
+		577B47F81A75B892005AE8A4 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47F61A75B892005AE8A4 /* Plan.swift */; };
+		577B47FA1A75BC3E005AE8A4 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47F91A75BC3E005AE8A4 /* ApiResult.swift */; };
+		577B47FE1A75BD48005AE8A4 /* Jsonizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577B47FD1A75BD48005AE8A4 /* Jsonizable.swift */; };
+		60528145D8EE0D18363D4174 /* PlansResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60528F3E48DAF8A1D8C9D252 /* PlansResponse.swift */; };
+		605286513CF34031C34582B5 /* CountriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60528F2DBA83BFA1F2CCEEB1 /* CountriesResponse.swift */; };
+		60528CE5249F61A5061C2C2A /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052890CD463B7F000863855 /* ApiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +35,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57672AE01A7702BD00B87572 /* ServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		57672AE31A7703C500B87572 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		576F83CA1A7689AD00591AC9 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		576F83CC1A768A3A00591AC9 /* ApiUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
+		576F83CE1A768B5500591AC9 /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		577B479F1A7594BE005AE8A4 /* KocomojoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KocomojoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		577B47A31A7594BE005AE8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577B47A41A7594BE005AE8A4 /* KocomojoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KocomojoKit.h; sourceTree = "<group>"; };
 		577B47AA1A7594BE005AE8A4 /* KocomojoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KocomojoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577B47B01A7594BE005AE8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577B47B11A7594BE005AE8A4 /* KocomojoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KocomojoKitTests.swift; sourceTree = "<group>"; };
+		577B47F51A75B892005AE8A4 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		577B47F61A75B892005AE8A4 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		577B47F91A75BC3E005AE8A4 /* ApiResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		577B47FD1A75BD48005AE8A4 /* Jsonizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jsonizable.swift; sourceTree = "<group>"; };
+		6052890CD463B7F000863855 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		60528F2DBA83BFA1F2CCEEB1 /* CountriesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesResponse.swift; sourceTree = "<group>"; };
+		60528F3E48DAF8A1D8C9D252 /* PlansResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28069DBE96697141D17EF06C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		577B47951A7594BE005AE8A4 = {
 			isa = PBXGroup;
 			children = (
 				577B47A11A7594BE005AE8A4 /* KocomojoKit */,
 				577B47AE1A7594BE005AE8A4 /* KocomojoKitTests */,
 				577B47A01A7594BE005AE8A4 /* Products */,
+				28069DBE96697141D17EF06C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +105,10 @@
 			children = (
 				577B47A41A7594BE005AE8A4 /* KocomojoKit.h */,
 				577B47A21A7594BE005AE8A4 /* Supporting Files */,
+				6052816F21BEB9049BAE4B20 /* entities */,
+				6052885629F04CCDAD3218EC /* api */,
+				605284C9FE317D84EDA2A4F3 /* utils */,
+				60528D1F9FB31CACD49B8C20 /* domain */,
 			);
 			path = KocomojoKit;
 			sourceTree = "<group>";
@@ -100,6 +136,54 @@
 				577B47B01A7594BE005AE8A4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6052816F21BEB9049BAE4B20 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				577B47F51A75B892005AE8A4 /* Country.swift */,
+				577B47F61A75B892005AE8A4 /* Plan.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		605284C9FE317D84EDA2A4F3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				576F83CA1A7689AD00591AC9 /* Settings.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		6052885629F04CCDAD3218EC /* api */ = {
+			isa = PBXGroup;
+			children = (
+				577B47FD1A75BD48005AE8A4 /* Jsonizable.swift */,
+				577B47F91A75BC3E005AE8A4 /* ApiResult.swift */,
+				576F83CC1A768A3A00591AC9 /* ApiUrl.swift */,
+				576F83CE1A768B5500591AC9 /* RestAPI.swift */,
+				60528D55EB7B727504D14150 /* response */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		60528D1F9FB31CACD49B8C20 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				57672AE01A7702BD00B87572 /* ServicesManager.swift */,
+				57672AE31A7703C500B87572 /* Result.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		60528D55EB7B727504D14150 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				60528F2DBA83BFA1F2CCEEB1 /* CountriesResponse.swift */,
+				60528F3E48DAF8A1D8C9D252 /* PlansResponse.swift */,
+				6052890CD463B7F000863855 /* ApiResponse.swift */,
+			);
+			path = response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +293,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577B47FE1A75BD48005AE8A4 /* Jsonizable.swift in Sources */,
+				57672AE11A7702BD00B87572 /* ServicesManager.swift in Sources */,
+				577B47FA1A75BC3E005AE8A4 /* ApiResult.swift in Sources */,
+				577B47F81A75B892005AE8A4 /* Plan.swift in Sources */,
+				576F83CF1A768B5500591AC9 /* RestAPI.swift in Sources */,
+				576F83CD1A768A3A00591AC9 /* ApiUrl.swift in Sources */,
+				576F83CB1A7689AD00591AC9 /* Settings.swift in Sources */,
+				577B47F71A75B892005AE8A4 /* Country.swift in Sources */,
+				57672AE41A7703C500B87572 /* Result.swift in Sources */,
+				605286513CF34031C34582B5 /* CountriesResponse.swift in Sources */,
+				60528145D8EE0D18363D4174 /* PlansResponse.swift in Sources */,
+				60528CE5249F61A5061C2C2A /* ApiResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -395,6 +491,7 @@
 				577B47B71A7594BE005AE8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		577B47B81A7594BE005AE8A4 /* Build configuration list for PBXNativeTarget "KocomojoKitTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +500,7 @@
 				577B47BA1A7594BE005AE8A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
