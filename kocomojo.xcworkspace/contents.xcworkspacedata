@@ -7,7 +7,4 @@
    <FileRef
       location = "group:KocomojoKit/KocomojoKit.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:KocomojoKit/Pods/Pods.xcodeproj">
-   </FileRef>
 </Workspace>

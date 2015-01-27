@@ -22,7 +22,6 @@
 		60528145D8EE0D18363D4174 /* PlansResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60528F3E48DAF8A1D8C9D252 /* PlansResponse.swift */; };
 		605286513CF34031C34582B5 /* CountriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60528F2DBA83BFA1F2CCEEB1 /* CountriesResponse.swift */; };
 		60528CE5249F61A5061C2C2A /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6052890CD463B7F000863855 /* ApiResponse.swift */; };
-		85F8658EFEB8AA744A750E75 /* libPods-KocomojoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC5C6EEFAB9DB26AB67E28B /* libPods-KocomojoKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		237316D09EFE1CFEDA5245C1 /* Pods-KocomojoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KocomojoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KocomojoKit/Pods-KocomojoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		57672AE01A7702BD00B87572 /* ServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
 		57672AE31A7703C500B87572 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		576F83CA1A7689AD00591AC9 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -55,8 +53,6 @@
 		6052890CD463B7F000863855 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		60528F2DBA83BFA1F2CCEEB1 /* CountriesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesResponse.swift; sourceTree = "<group>"; };
 		60528F3E48DAF8A1D8C9D252 /* PlansResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansResponse.swift; sourceTree = "<group>"; };
-		D84BE456D4546982C1A1BF16 /* Pods-KocomojoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KocomojoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-KocomojoKit/Pods-KocomojoKit.release.xcconfig"; sourceTree = "<group>"; };
-		DCC5C6EEFAB9DB26AB67E28B /* libPods-KocomojoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KocomojoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F8658EFEB8AA744A750E75 /* libPods-KocomojoKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,19 +74,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E4298359C66481064A56314 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				237316D09EFE1CFEDA5245C1 /* Pods-KocomojoKit.debug.xcconfig */,
-				D84BE456D4546982C1A1BF16 /* Pods-KocomojoKit.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		28069DBE96697141D17EF06C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCC5C6EEFAB9DB26AB67E28B /* libPods-KocomojoKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,7 +87,6 @@
 				577B47A11A7594BE005AE8A4 /* KocomojoKit */,
 				577B47AE1A7594BE005AE8A4 /* KocomojoKitTests */,
 				577B47A01A7594BE005AE8A4 /* Products */,
-				0E4298359C66481064A56314 /* Pods */,
 				28069DBE96697141D17EF06C /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -220,12 +204,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577B47B51A7594BE005AE8A4 /* Build configuration list for PBXNativeTarget "KocomojoKit" */;
 			buildPhases = (
-				3149E55147F65EAECA7601C4 /* Check Pods Manifest.lock */,
 				577B479A1A7594BE005AE8A4 /* Sources */,
 				577B479B1A7594BE005AE8A4 /* Frameworks */,
 				577B479C1A7594BE005AE8A4 /* Headers */,
 				577B479D1A7594BE005AE8A4 /* Resources */,
-				9980B0104A6295A06D9105EA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,39 +287,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3149E55147F65EAECA7601C4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9980B0104A6295A06D9105EA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KocomojoKit/Pods-KocomojoKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		577B479A1A7594BE005AE8A4 /* Sources */ = {
@@ -465,7 +414,6 @@
 		};
 		577B47B61A7594BE005AE8A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 237316D09EFE1CFEDA5245C1 /* Pods-KocomojoKit.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -481,7 +429,6 @@
 		};
 		577B47B71A7594BE005AE8A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D84BE456D4546982C1A1BF16 /* Pods-KocomojoKit.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
