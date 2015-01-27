@@ -5,8 +5,6 @@ workspace '../kocomojo'
 
 target 'KocomojoKit' do
 
-pod 'AFNetworking', '~> 2.5'
-
 end
 
 target 'KocomojoKitTests' do
